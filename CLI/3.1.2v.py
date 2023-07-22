@@ -13,7 +13,6 @@ username = getpass.getuser()
 
 
 class App:
-
     def __init__(self, root):
         # setting title
         root.title("PPX Updater")
@@ -111,12 +110,9 @@ class App:
 
     @staticmethod
     def GButton_60_command():
-
         def update():
-
             def random_char(y):
-                return "".join(
-                    random.choice(string.ascii_letters) for x in range(y))
+                return "".join(random.choice(string.ascii_letters) for x in range(y))
 
             random_num = random_char(10)
             print(f"Temp Folder Created Using The Name - {random_num}")
@@ -130,7 +126,7 @@ class App:
             )  # whatsapp
 
             if os.path.exists(
-                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
+                r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
             ):
                 os.remove(
                     r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
