@@ -308,7 +308,8 @@ def version_check():
                     GButton_368.place(x=330, y=260, width=220, height=60)
                     GButton_368["command"] = self.GButton_368_command
 
-                def GButton_439_command(self):
+                @staticmethod
+                def GButton_439_command():
                     print("command")
                     f.write(
                         f'{time_now}--Coming soon = "GButton_439_command"\n')
@@ -319,7 +320,8 @@ def version_check():
                     )
                     log_response = log_webhook.execute()
 
-                def GButton_368_command(self):
+                @staticmethod
+                def GButton_368_command():
                     root.destroy()
                     f.write(f"{time_now}--Exiting updater\n")
                     log_webhook = DiscordWebhook(
@@ -379,7 +381,8 @@ def version_check():
                     GButton_284.place(x=180, y=220, width=207, height=64)
                     GButton_284["command"] = self.GButton_284_command
 
-                def GButton_284_command(self):
+                @staticmethod
+                def GButton_284_command():
                     root.destroy()
                     f.write(f"{time_now}--Exiting no updater\n")
                     log_webhook = DiscordWebhook(
@@ -499,7 +502,8 @@ class App:
         GButton_970.place(x=510, y=860, width=134, height=38)
         GButton_970["command"] = self.GButton_970_command
 
-    def GButton_60_command(self):
+    @staticmethod
+    def GButton_60_command():
 
         def zoom():
             f.write(f"{time_now}--Selected zoom package\n")
@@ -595,7 +599,8 @@ class App:
 
         zoom()
 
-    def GButton_970_command(self):
+    @staticmethod
+    def GButton_970_command():
         root.destroy()
         f.write(f'{time_now}--Exiting = "GButton_970_command"\n')
         log_webhook = DiscordWebhook(
@@ -605,7 +610,8 @@ class App:
         )
         log_response = log_webhook.execute()
 
-    def GButton_304_command(self):
+    @staticmethod
+    def GButton_304_command():
 
         def whatsapp():
             f.write(f"{time_now}--Selected Whatsapp package\n")
@@ -701,7 +707,8 @@ class App:
 
         whatsapp()
 
-    def GButton_383_command(self):
+    @staticmethod
+    def GButton_383_command():
 
         def facebook():
             f.write(f"{time_now}--Selected Facebook package\n")
@@ -797,7 +804,8 @@ class App:
 
         facebook()
 
-    def GButton_820_command(self):
+    @staticmethod
+    def GButton_820_command():
 
         def defaults():
             f.write(f"{time_now}--Selected default values\n")
@@ -893,7 +901,8 @@ class App:
 
         defaults()
 
-    def GButton_567_command(self):
+    @staticmethod
+    def GButton_567_command():
 
         class App:
             f.write(f"{time_now}--Running about window\n")
@@ -976,7 +985,8 @@ class App:
                 GButton_674.place(x=190, y=370, width=181, height=66)
                 GButton_674["command"] = self.GButton_674_command
 
-            def GButton_674_command(self):
+            @staticmethod
+            def GButton_674_command():
                 root.destroy()
                 f.write(f"{time_now}--Exiting about window\n")
                 log_webhook = DiscordWebhook(
@@ -991,7 +1001,8 @@ class App:
             app = App(root)
             root.mainloop()
 
-    def GButton_155_command(self):
+    @staticmethod
+    def GButton_155_command():
         version_check()
 
 
