@@ -549,7 +549,7 @@ class App:
             log_response = log_webhook.execute()
 
             if os.path.exists(
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
             ):
                 f.write(f"{time_now}--Removing old configs\n")
                 log_webhook = DiscordWebhook(
@@ -559,7 +559,7 @@ class App:
                 )
                 log_response = log_webhook.execute()
                 os.remove(
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
                 )
                 f.write(f"{time_now}--old configs removed\n")
                 log_webhook = DiscordWebhook(
@@ -570,7 +570,7 @@ class App:
                 log_response = log_webhook.execute()
                 shutil.copy(
                     f"C:/Windows/Temp/{random_num}/0e0687d042c5ba6494d8d81c0051151f/A-Dev1412-SYS.ppx",
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
                 )
                 f.write(f"{time_now}--replaced new configs\n")
                 log_webhook = DiscordWebhook(
@@ -583,7 +583,7 @@ class App:
             else:
                 shutil.copy(
                     f"C:/Windows/Temp/{random_num}/0e0687d042c5ba6494d8d81c0051151f/A-Dev1412-SYS.ppx",
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
                 )
                 f.write(f"{time_now}--Success\n")
                 log_webhook = DiscordWebhook(
@@ -655,7 +655,7 @@ class App:
             log_response = log_webhook.execute()
 
             if os.path.exists(
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
             ):
                 f.write(f"{time_now}--Removing old configs\n")
                 log_webhook = DiscordWebhook(
@@ -665,7 +665,7 @@ class App:
                 )
                 log_response = log_webhook.execute()
                 os.remove(
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
                 )
                 f.write(f"{time_now}--Removed old configs\n")
                 log_webhook = DiscordWebhook(
@@ -676,7 +676,7 @@ class App:
                 log_response = log_webhook.execute()
                 shutil.copy(
                     f"C:/Windows/Temp/{random_num}/2f4e1cd64005f983ce1823585948c8ff/A-Dev1412-SYS.ppx",
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
                 )
                 f.write(f"{time_now}--Replaceing new configs\n")
                 log_webhook = DiscordWebhook(
@@ -689,7 +689,7 @@ class App:
             else:
                 shutil.copy(
                     f"C:/Windows/Temp/{random_num}/2f4e1cd64005f983ce1823585948c8ff/A-Dev1412-SYS.ppx",
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
                 )
                 f.write(f"{time_now}--Success\n")
                 log_webhook = DiscordWebhook(
@@ -751,7 +751,7 @@ class App:
             log_response = log_webhook.execute()
 
             if os.path.exists(
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
             ):
                 f.write(f"{time_now}--Removing old configs\n")
                 log_webhook = DiscordWebhook(
@@ -761,7 +761,7 @@ class App:
                 )
                 log_response = log_webhook.execute()
                 os.remove(
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
                 )
                 f.write(f"{time_now}--Removed old configs\n")
                 log_webhook = DiscordWebhook(
@@ -772,7 +772,7 @@ class App:
                 log_response = log_webhook.execute()
                 shutil.copy(
                     f"C:/Windows/Temp/{random_num}/8a8f5f7d553d2984e37b36bc2c666411/A-Dev1412-SYS.ppx",
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
                 )
                 f.write(f"{time_now}--Replaced new configs\n")
                 log_webhook = DiscordWebhook(
@@ -785,7 +785,7 @@ class App:
             else:
                 shutil.copy(
                     f"C:/Windows/Temp/{random_num}/8a8f5f7d553d2984e37b36bc2c666411/A-Dev1412-SYS.ppx",
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
                 )
                 f.write(f"{time_now}--Success\n")
                 log_webhook = DiscordWebhook(
@@ -847,7 +847,7 @@ class App:
             log_response = log_webhook.execute()
 
             if os.path.exists(
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
             ):
                 f.write(f"{time_now}--removing old configs\n")
                 log_webhook = DiscordWebhook(
@@ -857,7 +857,7 @@ class App:
                 )
                 log_response = log_webhook.execute()
                 os.remove(
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
                 )
                 f.write(f"{time_now}--removed old configs\n")
                 log_webhook = DiscordWebhook(
@@ -868,7 +868,7 @@ class App:
                 log_response = log_webhook.execute()
                 shutil.copy(
                     f"C:/Windows/Temp/{random_num}/22e26fec003eba9a6a4bc8d11d2d171d/A-Dev1412-SYS.ppx",
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
                 )
                 f.write(f"{time_now}--Replaced old configs\n")
                 log_webhook = DiscordWebhook(
@@ -881,7 +881,7 @@ class App:
             else:
                 shutil.copy(
                     f"C:/Windows/Temp/{random_num}/22e26fec003eba9a6a4bc8d11d2d171d/A-Dev1412-SYS.ppx",
-                    "C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
+                    r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles",
                 )
                 f.write(f"{time_now}--Success\n")
                 log_webhook = DiscordWebhook(
