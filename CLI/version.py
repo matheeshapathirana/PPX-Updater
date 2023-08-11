@@ -8,7 +8,6 @@ import git
 
 
 def version_check():
-
     def random_char(y):
         return "".join(random.choice(string.ascii_letters) for x in range(y))
 
@@ -34,7 +33,6 @@ def version_check():
     if check > cur_version_check:
 
         class App:
-
             def __init__(self, root):
                 # setting title
                 root.title("Updater")
@@ -95,7 +93,6 @@ def version_check():
     else:
 
         class no_updates:
-
             def __init__(self, root):
                 # setting title
                 root.title("Updater")
