@@ -57,7 +57,6 @@ def done():
 
 
 def update():
-
     def random_char(y):
         return "".join(random.choice(string.ascii_letters) for x in range(y))
 
@@ -65,7 +64,8 @@ def update():
     main_dir = f"C:/Windows/Temp/{random_num}"
     os.mkdir(main_dir)
     git.Git(main_dir).clone(
-        "https://gist.github.com/22e26fec003eba9a6a4bc8d11d2d171d.git")
+        "https://gist.github.com/22e26fec003eba9a6a4bc8d11d2d171d.git"
+    )
 
     os.remove(
         r"C:\Program Files (x86)\A-Developer1412\HTTP Proxy Injector\AppData\Profiles\A-Dev1412-SYS.ppx"
