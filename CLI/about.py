@@ -3,7 +3,6 @@ import tkinter.font as tkFont
 
 
 class App:
-
     def __init__(self, root):
         # setting title
         root.title("About")
